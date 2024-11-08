@@ -20,7 +20,7 @@ jobs:
         cache: 'maven' # Caches Maven dependencies to speed up workflow
 
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file project/pom.xml
 
     - name: Test with Maven
-      run: mvn -B test --file pom.xml
+      run: mvn -B test --file project/pom.xml
